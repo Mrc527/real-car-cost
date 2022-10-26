@@ -1,7 +1,10 @@
 ---
 imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
-imageAlt: "About Gatsby Theme Portfolio Minimal"
+imageAlt: "About The Real Car Cost"
 ---
+
+Do you know how much your car actually costs?
+The Real Car Cost is a project for calculating it, showing what the difference is between what you think your car costs and what actually you have to pay for having it.
 
 Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
 
@@ -12,3 +15,5 @@ Using theme composition, you can easily customize the CSS theme to your own pref
 Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :)
 
 Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash
+
+Created with ❤️ by <a href="https://www.visin.ch">Marco</a>
