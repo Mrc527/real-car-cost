@@ -12,13 +12,14 @@
     "node": ">=16.0.0"
   },
   "dependencies": {
+    "antd": "^4.23.6",
     "gatsby": "^4.18.2",
     "gatsby-theme-portfolio-minimal": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-refresh": "^0.14.0"
   },
-  "author": "Konstantin Münster <mail@konstantin.digital>",
+  "author": "Marco Visin <marco@visin.ch>",
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-minimal-theme",
   "homepage": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme#readme",

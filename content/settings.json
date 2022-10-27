@@ -16,11 +16,11 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "asd" },
+    "logo": { "text": "The Real Car Cost" },
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
-        { "label": "Features", "url": "/#features" },
+        { "label": "Calculate Now", "url": "/calculate" },
         { "label": "Github", "url": "/#github" }
       ],
       "ctaButton": {
