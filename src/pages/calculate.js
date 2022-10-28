@@ -2,17 +2,13 @@ import React, {useState} from "react";
 import { Page, Seo } from "gatsby-theme-portfolio-minimal";
 import {Button, Steps} from "antd";
 import 'antd/dist/antd.css';
-
-function buyStep(){
-    return <div>FUNZIONA!</div>
-}
-
+import {BuyStep} from '../components/buystep.js'
 
 export default function CalculatePage() {
     const steps = [
         {
             title: 'Buy',
-            content: buyStep(),
+            content: <BuyStep />,
         },
         {
             title: 'Second',
