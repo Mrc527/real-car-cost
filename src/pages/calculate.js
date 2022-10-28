@@ -3,16 +3,20 @@ import { Page, Seo } from "gatsby-theme-portfolio-minimal";
 import {Button, Steps} from "antd";
 import 'antd/dist/antd.css';
 
+function buyStep(){
+    return <div>FUNZIONA!</div>
+}
+
 
 export default function CalculatePage() {
     const steps = [
         {
-            title: 'First',
-            content: 'First-content',
+            title: 'Buy',
+            content: buyStep(),
         },
         {
             title: 'Second',
-            content: 'Second-content',
+            content: 'Second-content boooooooh',
         },
         {
             title: 'Last',

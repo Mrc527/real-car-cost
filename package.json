@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-portfolio-minimal-theme",
+  "name": "the-real-car-cost",
   "version": "1.0.0",
-  "description": "A Gatsby Starter Project to easily get started with the Portfolio Minimal Theme.",
+  "description": "Asd Gatsby Starter Project to easily get started with the Portfolio Minimal Theme.",
   "scripts": {
     "clean": "gatsby clean",
     "develop": "gatsby develop",
