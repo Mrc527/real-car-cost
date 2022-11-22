@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import 'antd/dist/antd.css';
 //import './index.css';
+import moment from 'moment';
 import { PlusOutlined } from '@ant-design/icons';
 import {
   Form,
@@ -27,17 +28,22 @@ const BuyStep = () => {
     // getting stored value
     const saved = localStorage.getItem("buyData");
     const initialValue = JSON.parse(saved);
+    if (initialValue.buy_date) {
+      initialValue.buy_date = moment(initialValue.buy_date);
+    }
     return initialValue || "";
   });
+  //console.log('buyData',buyData)
   const [form] = Form.useForm();
-  console.log("buyData",buyData)
   useEffect(() => {
     // storing input name
     localStorage.setItem("buyData", JSON.stringify(buyData));
   }, [buyData]);
+
   return (
     <>
       <Form
+      style={{marginTop:'3rem'}}
         form={form}
         initialValues={buyData}
         labelCol={{ span: 4 }}
@@ -48,13 +54,10 @@ const BuyStep = () => {
           setBuyData(form.getFieldsValue())
         }}
         onFinish={(asd) => {
-          console.log("finish",asd)
+          console.log("finish", asd)
         }}
         preserve
       >
-        <Form.Item preserve name={["app"]}>
-          <Input />
-        </Form.Item>
         <Form.Item preserve name={["car_type"]} label="Car Type">
           <Select>
             <Select.Option value="city-car">City Car</Select.Option>
@@ -76,8 +79,8 @@ const BuyStep = () => {
         <Form.Item label="Switch" valuePropName="checked">
           <Switch />
         </Form.Item>
-        <Form.Item label="Upload" valuePropName="fileList">
-          <Upload action="/upload.do" listType="picture-card">
+        <Form.Item preserve label="Upload" valuePropName="fileList">
+          <Upload listType="picture-card">
             <div>
               <PlusOutlined />
               <div style={{ marginTop: 8 }}>Upload</div>
